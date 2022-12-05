@@ -1,3 +1,5 @@
+/* ---- GLOBAL, BASIC ELEMENTS, BASIC CLASSES */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,17 +10,42 @@ body {
     background-color: #d9dcd6;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+
+/* ---- HEADER AND NAVIGATION ---- */
+
+/* The header has a large padding with a hero image background */
+/* The header has a thick top border that serves as the nav and h1 background */
+
 header {
     border-top: 96px solid #2a607c;
     padding: 20px;
     padding-bottom: 724px;
     margin-bottom: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
 }
 
 header h1 {
@@ -31,6 +58,9 @@ header h1 {
 header h1 .seo {
     color: #d9dcd6;
 }
+
+/* The navigation is a ul inside of a nav element */
+/* The navigation is positioned over the header's top border */
 
 header nav {
     position: relative;
@@ -51,16 +81,7 @@ header nav ul li {
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
-/* Removed this class, moved hero image to header
+/* I removed this class, moved hero image to header
 
 .hero {
     height: 800px;
@@ -72,37 +93,16 @@ p {
 }
 */
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
+/* ---- MAIN CONTENT SECTIONS ---- */
 
-#what-we-do {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
+/* Rules common to both What We Do and Benefits */
+/* Each section has a "hidden" h2 that can be seen by screen readers */
 
-#what-we-do h3 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#benefits h4 {
-    font-size: 19px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-#benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+#what-we-do,
+#benefits {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color: #ffffff;
 }
 
 #what-we-do ul,
@@ -118,6 +118,34 @@ p {
     left: -9999px;
 }
 
+/* Rules for the What We Do section */
+/* What We Do takes up the left three-fourths of the page below the header */
+
+#what-we-do {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#what-we-do h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#what-we-do li {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+}
+
+#what-we-do img {
+    max-height: 200px;
+}
+
+/* Rules for the Benefits section */
+/* Benefits takes up the right one-fourth of the page below the header */
+
 #benefits {
     margin-right: 20px;
     padding: 20px;
@@ -125,45 +153,27 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
 #benefits li {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
-.benefit-lead img {
+#benefits h4 {
+    margin-bottom: 10px;
+    font-size: 19px;
+    text-align: center;
+}
+
+#benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-#what-we-do li {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-#what-we-do img {
-    max-height: 200px;
-}
+/* ---- FOOTER ---- */
 
 footer {
     padding: 30px;
